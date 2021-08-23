@@ -1,0 +1,33 @@
+BIG O NOTATION
+-Time taken by an algorithm as a function of the length of input.
+- Its used to compare which algorithm is better.
+-We always use the worst case scenaruio to determine the Big O Notation.
+
+EXAMPLES OF TIME COMPLEXITY:
+Always consider highest power and ignore small powers and constants
+a) f(n)=3n^2 +5n  -   O(n^2)
+b) n+ 100 logn    -   O(n)
+c) 3n^3 + 4n^5    -   O(n^5)
+d) 100000         -   O(1)
+e) n/4            -   O(n)
+
+PROGRAM EXAMPLES(ignore syntax)
+EX1:
+fun(n)
+if(n==0)
+return 1;
+for(int i=0;i<n;i++){
+    -----
+    -----     if code has c operations inside for loop
+}
+fun(n/2);
+fun(n/2);
+}
+Step 1:First find T form Notation
+T(n)=2T(n/2) + nc
+-> 2 is written ecause there are 2 recursive calls
+-> nc is written because c operations run for n iterations
+
+Step 2:Implement Tree algorithm
+-> Write non recursive part as it is (nc in this case)
+-> 

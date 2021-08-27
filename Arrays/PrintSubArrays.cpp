@@ -13,7 +13,7 @@ for(int i=0;i<n;i++){
 
 }
 int main() {
-	// your code goes here
+	
     int arr[] = {1,2,3,4};
 	int n = sizeof(arr)/sizeof(int);
 

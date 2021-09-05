@@ -1,6 +1,6 @@
  #include<iostream>
 using namespace std;
-
+//Time Complexity O(n^2)
 //Sort the elements in increasing order 
 void selection_sort(int a[],int n){
 

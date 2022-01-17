@@ -1,5 +1,4 @@
 #include<iostream>
-#include<ctime>
 using namespace std;
 
 //Sort the elements in increasing order 

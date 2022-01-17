@@ -61,6 +61,17 @@ printPostorder(root->left);
 printPostorder(root->right);
 cout<<root->data<<" ";
 }
+/*To print the nodes in each level of tree-
+Level Order Traversal
+Algo-
+1)Make a queue
+	Note-FIFO flow of the queue is gonna be helpful
+2)push parent node
+3)Pop parent node + push child nodes
+4)Push a NULL after each level
+   Pop NULL and print a newline and push a NULL
+5)Repeat  2,3,4
+6)When queue becomes empty no need to push null*/
 void levelOrder(Node *root){
     queue <Node*> q;
     q.push(root);
@@ -89,6 +100,7 @@ void levelOrder(Node *root){
     }
     
 }
+
 int main(){
 //The main origin is called the root node
 //2 nodes coming out of the same node are siblings to each other
@@ -107,5 +119,6 @@ int main(){
  printPostorder(root);
  cout<<"\nlevelOrder O/P\n";
  levelOrder(root);
+ 
 return 0;
 }

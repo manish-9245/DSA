@@ -59,6 +59,7 @@ using namespace std;
      printInOrder(root);
      cout<<endl;
      int key;
+     cout<<"Enter the key that you wish to search: ";
      cin>>key;
      if(search(root,key)==1)
      cout<<"Found";
